@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, Banner, Footer, Catalog } from './components'
+import { Navbar, Banner, Footer, Catalog, CardPage } from './components'
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Banner />} />
         <Route path='/catalog' element={<Catalog />} />
+        <Route path='/catalog/:id' element={<CardPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

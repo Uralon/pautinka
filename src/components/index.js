@@ -3,6 +3,8 @@ import Banner from "./Banner";
 import Footer from "./Footer";
 import Catalog from "./Catalog";
 import Card from "./items/Card";
+import CardPage from "./items/CardPage";
+
 
 
 export {
@@ -11,4 +13,5 @@ export {
     Banner,
     Catalog,
     Card,
+    CardPage,
 };
