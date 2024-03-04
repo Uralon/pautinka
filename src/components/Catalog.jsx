@@ -1,6 +1,8 @@
 import React from 'react'
+import Card from './items/Card'
+import { products } from '../database'
 
-const Catalog = () => {
+export default function Catalog() {
   return (
     <section className='bg-white min-h-[80vh]'>
       <div className='container '>
@@ -21,8 +23,12 @@ const Catalog = () => {
         </div>
         <div>
           <div className='my-20'>
-            <ul className='catalog-list'>
-
+            <ul className='catalog-list flex flex-wrap gap-20'>
+              {
+                products.map((product, index) => (
+                  <Card key={index} {...product} />
+                ))
+              }
             </ul>
           </div>
         </div>
@@ -31,4 +37,3 @@ const Catalog = () => {
   )
 }
 
-export default Catalog
