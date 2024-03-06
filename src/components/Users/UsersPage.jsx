@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 
 const UsersPage = () => {
@@ -33,6 +35,7 @@ const UsersPage = () => {
                         })
                     }
                 </ul>
+                <Link className='text-3xl mt-8 inline-block hover:text-red-500' to="/create">Создать пользователя</Link>
             </div>
 
         </section>
