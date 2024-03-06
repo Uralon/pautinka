@@ -11,7 +11,7 @@ const Navbar = () => {
                 <Link to='/' className='uppercase hover:text-red-500'>Главная</Link>
                 <Link to='/catalog' className='uppercase hover:text-red-500'>Каталог</Link>
                 <div className='bg-[#D9D9D9] w-[3px] h-[43px]' />
-                <Link to='/' className='uppercase hover:text-red-500'>информация</Link>
+                <Link to='/users' className='uppercase hover:text-red-500'>Пользователи</Link>
             </div>
             <div className="header__right flex gap-2 items-center">
                 <svg width="21" height="28" viewBox="0 0 21 28" fill="none" xmlns="http://www.w3.org/2000/svg">
